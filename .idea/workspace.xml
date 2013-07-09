@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc26a0a-3a5e-4659-a199-c343882becdf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/products/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/products_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/products_controller.rb" />
     </list>
     <ignored path="snowforest.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="6dc26a0a-3a5e-4659-a199-c343882becdf" time="1373403113374" ignored="false" />
     <file path="/Gemfile" changelist="6dc26a0a-3a5e-4659-a199-c343882becdf" time="1373403499206" ignored="false" />
     <file path="/routes.rb" changelist="6dc26a0a-3a5e-4659-a199-c343882becdf" time="1373403646891" ignored="false" />
-    <file path="/products_controller.rb" changelist="6dc26a0a-3a5e-4659-a199-c343882becdf" time="1373404145554" ignored="false" />
+    <file path="/products_controller.rb" changelist="6dc26a0a-3a5e-4659-a199-c343882becdf" time="1373405581897" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,18 +49,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="products_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="products_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="5" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0">
+            <state line="87" column="0" selection-start="1726" selection-end="1726" vertical-scroll-proportion="1.2412281">
               <folding>
-                <element signature="e#51#93#0" expanded="true" />
-                <element signature="e#97#151#0" expanded="true" />
-                <element signature="e#155#194#0" expanded="true" />
-                <element signature="e#198#252#0" expanded="true" />
-                <element signature="e#255#390#0" expanded="true" />
-                <element signature="e#393#565#0" expanded="true" />
-                <element signature="e#568#643#0" expanded="true" />
+                <element signature="e#533#586#0" expanded="true" />
+                <element signature="e#634#1047#0" expanded="true" />
+                <element signature="e#1094#1492#0" expanded="true" />
+                <element signature="e#1543#1725#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,10 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/products/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="9" selection-start="421" selection-end="421" vertical-scroll-proportion="0.38636363">
+            <state line="17" column="9" selection-start="421" selection-end="421" vertical-scroll-proportion="-10.625">
               <folding>
                 <element signature="tag#div#0" expanded="true" />
                 <element signature="tag#div#1" expanded="true" />
@@ -150,16 +143,16 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/products_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/products/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/products/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/products_controller.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="2" />
     <option name="y" value="22" />
-    <option name="width" value="1037" />
+    <option name="width" value="839" />
     <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -773,14 +766,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="22" width="1037" height="878" extended-state="0" />
+    <frame x="2" y="22" width="839" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35116044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35116044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -879,21 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="5" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#51#93#0" expanded="true" />
-            <element signature="e#97#151#0" expanded="true" />
-            <element signature="e#155#194#0" expanded="true" />
-            <element signature="e#198#252#0" expanded="true" />
-            <element signature="e#255#390#0" expanded="true" />
-            <element signature="e#393#565#0" expanded="true" />
-            <element signature="e#568#643#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -924,12 +902,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="9" selection-start="421" selection-end="421" vertical-scroll-proportion="0.38636363">
+        <state line="17" column="9" selection-start="421" selection-end="421" vertical-scroll-proportion="-10.625">
           <folding>
             <element signature="tag#div#0" expanded="true" />
             <element signature="tag#div#1" expanded="true" />
             <element signature="tag#div#2" expanded="true" />
             <element signature="tag#div#3" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="0" selection-start="1726" selection-end="1726" vertical-scroll-proportion="1.2412281">
+          <folding>
+            <element signature="e#533#586#0" expanded="true" />
+            <element signature="e#634#1047#0" expanded="true" />
+            <element signature="e#1094#1492#0" expanded="true" />
+            <element signature="e#1543#1725#0" expanded="true" />
           </folding>
         </state>
       </provider>
