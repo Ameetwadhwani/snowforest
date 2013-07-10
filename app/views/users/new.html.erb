@@ -14,19 +14,17 @@
 
 
          <div class="field">
-            <%= f.label :email %><br/>
-            <%= f.text_field :email %>
-         </div>
-         <div class="field">
-            <%= f.label :password %><br/>
-            <%= f.password_field :password %>
-         </div>
-         <div class="field">
-            <%= f.label :password_confirmation %><br/>
-            <%= f.password_field :password_confirmation %>
+            <%= f.label :email %> <%= f.text_field :email %> <br/>
+
+            <%= f.label :password %>
+            <%= f.password_field :password %><br/>
+
+            <%= f.label :password_confirmation %>
+            <%= f.password_field :password_confirmation %> <br/>
          </div>
 
-        <div class="actions"><%= f.submit %></div>
+        <div class="actions">
+
+          <%= f.submit 'Sign-up!', :class => 'btn btn-large btn-primary' %></div>
 
 <% end %>
-
