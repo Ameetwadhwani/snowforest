@@ -1,28 +1,106 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Snowforest</title>
-  <%= stylesheet_link_tag    'application', media: "all", "data-turbolinks-track" => true %>
-  <%= stylesheet_link_tag    './vendor/assets/stylesheets/css/style', media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-    <div class="container">
-        <% if flash[:notice] %>
-            <div id="notice"><%= flash[:notice] %></div>
-        <% end %>
-
-      <% if flash[:alert] %>
-            <p id="alert"><%= flash[:alert] %></p>
-      <% end %>
+    <head>
+      <title>Snowforest</title>
+      <%= stylesheet_link_tag    'application', media: "all", "data-turbolinks-track" => true %>
+      <%= stylesheet_link_tag    './vendor/assets/stylesheets/css/style', media: "all", "data-turbolinks-track" => true %>
+      <%= javascript_include_tag 'application' %>
+      <%= csrf_meta_tags %>
+    </head>
+    <body>
 
 
-        <%= yield %>
-    </div>
+ <!-- start: Header -->
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+
+                <div class="row-fluid">
+                 <%= link_to content_tag(:span, 'SnowForest'), products_url, :class => 'brand span2' %>
+				</div>
+
+				<!-- start: Header Menu -->
+				<div class="nav-no-collapse header-nav">
+					<ul class="nav pull-right">
+
+				<!-- start: User Dropdown -->
+						<li class="dropdown">
+							<a class="btn account dropdown-toggle" data-toggle="dropdown" href="#">
+								<div class="avatar">
+                                  <!--<img src="..." alt="Avatar">-->
+                                </div>
+								<div class="user">
+									<span class="name">Welcome!</span>
+                                    <span class="name">
+                                      <% if current_user %>
+                                        Signed in as <%= current_user.email %>.
+                                          <%= link_to 'Log out', session_path('current'), :method => :delete %></span>
+                                     <% else %>
+
+                                     <%= link_to 'Log in', new_session_path %>  or
+                                          <%= link_to 'Sign up', new_user_path %>
+                                     <% end %>
+
+								</div>
+							</a>
+
+						</li>
+						<!-- end: User Dropdown -->
+					</ul>
+				</div>
+				<!-- end: Header Menu -->
+
+			</div>
+		</div>
+	</div>
+	<!-- start: Header -->
+
+		<div class="container-fluid-full">
+		<div class="row-fluid">
 
 
 
-</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Notices -->
+        <div class="container">
+          <div class="align-right">
+            <% if flash[:notice] %>
+                <div id="notice"><%= flash[:notice] %></div>
+            <% end %>
+
+            <% if flash[:alert] %>
+                <p id="alert"><%= flash[:alert] %></p>
+            <% end %>
+        </div>
+
+<!--Validate User Login-->
+        <div class="align-right">
+            <p class="userinfo">
+
+            </p>
+        </div>
+
+<!--YIELD-->
+
+          <%= yield %>
+
+        </div>
+    </body>
 </html>
