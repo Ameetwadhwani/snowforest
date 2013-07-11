@@ -16,9 +16,6 @@
 			<div class="container-fluid">
                 <div class="row-fluid">
                      <%= link_to content_tag(:span, 'SnowForest'), products_url, :class => 'brand span2' %>
-
-
-
                         <div class="nav pull-right">
                            <% if current_user %>
                                  Welcome, <strong><%= current_user.email %>!</strong> <br/>
@@ -28,9 +25,7 @@
                                     or
                                   <%= link_to 'Sign up', new_user_path %>
                            <% end %>
-
                         </div>
-
                 </div>
 			</div>
 		</div>
