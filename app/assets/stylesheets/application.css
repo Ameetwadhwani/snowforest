@@ -10,10 +10,10 @@
  *
  *= require_self
  *= require_tree
+ *= require_directory
 
 
 
  */
 
 
-'./vendor/assets/stylesheets/css/style'
