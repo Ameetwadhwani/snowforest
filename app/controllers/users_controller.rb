@@ -18,15 +18,3 @@ class UsersController < ApplicationController
   end
 end
 
-
-#
-#respond_to do |format|
-#	if @photo.save
-#		format.html { redirect_to photos_path , notice: 'Photo was successfully created.' }
-#		format.json { render action: 'show', status: :created, location: @photo }
-#	else
-#		format.html { render action: 'new', flash[:alert] => 'Missing fields'}
-#		format.json { render json: @photo.errors, status: :unprocessable_entity }
-#	end
-#end
-#end

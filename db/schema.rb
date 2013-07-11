@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(:version => 20130711063001) do
 
+# Could not dump table "photos" because of following StandardError
+#   Unknown type 'hstore' for column 'properties'
+
   create_table "products", :force => true do |t|
     t.string   "name"
     t.text     "description"

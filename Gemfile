@@ -12,6 +12,7 @@ group :development do
 end
 
 gem 'pg-hstore'
+gem 'taps'
 
 group :production do
 	gem 'pg'
