@@ -1,40 +1,47 @@
-<% if current_user  %>
-    <h3>Reviews</h3>
-        <p> Reviews for <%= @product.name %> </p>
+
+<div class="span9"><% if current_user  %>
+    <h1>Reviews</h1>
+        <strong> Reviews for <%= @product.name %> </strong>
+        <div>
             <% @product.reviews.each do |review| %>
-                <%= review.comment %>
-                    <br/>
+               <blockquote> <%= review.comment %> </blockquote>
                  <% if review.user != nil %>
-                     <em> by <%= review.user.email %> </em>
-                        Added on: <%= review.created_at %>
+                     by <%= review.user.email %>
+                     Added on: <%= review.created_at %>
                  <% end %>
             <% end %>
+        </div>
 <% end %>
+</div>
 
-<% if current_user %>
-    <h4>New Review</h4>
-        <%= form_for([@product, @review]) do |f| %>
-            <% if @review.errors.any? %>
-                <div id="alert alert-block">
-                    <h2><%= pluralize(@review.errors.count, 'error') %> prohibited this review from being saved:</h2>
-                        <ul>
-                             <% @review.errors.full_messages.each do |msg| %>
-                                 <li><%= msg %></li>
-                             <% end %>
-                         </ul>
-                 </div>
+<div class="span3">
+  <div id="text area" style= "width: 150px">
+    <% if current_user %>
+        <h4>New Review</h4>
+            <%= form_for([@product, @review]) do |f| %>
+                <% if @review.errors.any? %>
+                    <div id="alert alert-block">
+                        <h2><%= pluralize(@review.errors.count, 'error') %> prohibited this review from being saved:</h2>
+                            <ul>
+                                 <% @review.errors.full_messages.each do |msg| %>
+                                     <li><%= msg %></li>
+                                 <% end %>
+                             </ul>
+                     </div>
+                <% end %>
+
+                <div class="field">
+                    <%= f.label :comment %><br />
+                    <%= f.text_area :comment %>
+                </div>
+
+                <div class="actions">
+                    <%= f.submit :class => 'btn btn-primary span12' %>
+                </div>
             <% end %>
 
-            <div class="field">
-                <%= f.label :comment %><br />
-                <%= f.text_area :comment %>
-            </div>
-
-            <div class="actions">
-                <%= f.submit :class => 'btn btn-primary span12' %>
-            </div>
-        <% end %>
-
-<% else %>
-        <p>Please <%= link_to "log in", new_session_path %> to add a review.</p>
-<% end %>
+    <% else %>
+            <p>Please <%= link_to "log in", new_session_path %> to add a review.</p>
+    <% end %>
+  </div>
+</div>
