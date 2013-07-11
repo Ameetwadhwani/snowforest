@@ -1,15 +1,20 @@
-<h1>Log in</h1>
+<div class="row-fluid">
+    <div class="login-box">
+        <h2>Login to your account</h2>
 
-<%= form_tag sessions_path do %>
-    <div class="field">
-      <%= label_tag :email %><br/>
-      <%= text_field_tag :email, params[:email] %>
+           <!-- BEGIN FORM -->
+            <%= form_tag sessions_path do %>
+              <%= text_field_tag :email, params[:email], :class => 'input-large span12', :placeholder => 'email address'%>
+               <%= password_field_tag :password, params[:password], :class => 'input-large span12', :placeholder => 'password' %>
+                <div class="clearfix"></div>
+                <!--<label class="remember" for="remember"><input type="checkbox" id="remember" /> Remember me</label> <br/>-->
+                <div class="clearfix"></div>
+              <%= submit_tag 'Log in', :class => 'btn btn-primary span12' %>
+            <% end %>
+           <!--END FORM -->
+
+        <h3>Forgot Password?</h3>
+            <p>Uh oh.<a href="#">Clicking here</a> won't reset your password.</p>
     </div>
-     <div class="field">
-      <%= label_tag :password %><br/>
-      <%= password_field_tag :password %>
-    </div>
-    <div class="actions">
-      <%= submit_tag 'Log in', :class => 'btn btn-large btn-primary' %>
-    </div>
-<% end %>
+</div>
+

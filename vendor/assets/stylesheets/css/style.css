@@ -3103,7 +3103,7 @@ ul.messagesList li span.date {
 .login-box {
   width: 300px;
   padding: 20px;
-  margin: 100px auto;
+  margin: 35px auto;
   background: #fff;
   overflow: hidden;
   -webkit-border-radius: 2px;
@@ -3113,7 +3113,7 @@ ul.messagesList li span.date {
 .login-box input[type="text"],
 .login-box input[type="password"] {
   border: none;
-  background: #e4e6eb;
+  background: #cbcdd2;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;

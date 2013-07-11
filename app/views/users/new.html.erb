@@ -1,31 +1,32 @@
-<h1>Create Your Account</h1>
-
-<%= form_for @user do |f| %>
-    <% if @user.errors.any? %>
-        <div class="error_messages">
-          <h2>Form is invalid</h2>
-              <ul>
-                <% for message in @user.errors.full_messages %>
-                  <li><%= message %></li>
-                <% end %>
-              </ul>
-        </div>
-    <% end %>
 
 
-         <div>
-           <%= f.label :email %>
-           <%= f.text_field :email%>
+<div class="row-fluid">
+    <div class="login-box">
+        <h2>Create An Account</h2>
 
-            <%= f.label :password %>
-            <%= f.password_field :password %><br/>
+       <!-- FORM ERRORS -->
+        <%= form_for @user do |f| %>
+            <% if @user.errors.any? %>
+                <div class="alert alert-error">
+                  <h2>Oh dear. Something isn't quite right...</h2>
+                      <ul>
+                        <% for message in @user.errors.full_messages %>
+                          <li><%= message %></li>
+                        <% end %>
+                      </ul>
+                </div>
+            <% end %>
 
-            <%= f.label 'Confirm Password' %>
-            <%= f.password_field :password_confirmation %> <br/>
-         </div>
+      <!--SIGN-UP FORM -->
 
-        <div class="actions">
+            <%= f.text_field :email, :class => 'input-large span12', :placeholder => :email %>
+            <%= f.password_field :password, :class => 'input-large span12', :placeholder => 'password' %><br/>
+            <%= f.password_field :password_confirmation, :class => 'input-large span12', :placeholder => 'confirm password' %> <br/>
+            <%= f.submit 'Sign-up!', :class => 'btn btn-primary span12' %>
 
-          <%= f.submit 'Sign-up!', :class => 'btn btn-large btn-primary' %></div>
+        <% end %>
 
-<% end %>
+      <!--END FORM -->
+
+    </div>
+</div>
