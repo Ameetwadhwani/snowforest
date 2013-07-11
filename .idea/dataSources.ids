@@ -30,4 +30,16 @@
       <column name="seq" sqlType="" length="2000000000" precision="10" nullable="true" jdbcType="12"/>
     </table>
   </data-source>
+  <data-source source="LOCAL" name="Rails snowforest: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="b25f8038-db60-4571-9405-aafcdb5d0331">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql:db/production</jdbc-url>
+    <libraries>
+      <library>
+        <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>
+      </library>
+      <library>
+        <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-9.1-901.jdbc3.jar</url>
+      </library>
+    </libraries>
+  </data-source>
 </component>
