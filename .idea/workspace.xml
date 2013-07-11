@@ -6,6 +6,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/.gitkeep" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/plugins/.gitkeep" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="snowforest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,7 +50,7 @@
     <file path="/seeds.rb" changelist="6dc26a0a-3a5e-4659-a199-c343882becdf" time="1373560921039" ignored="false" />
     <file path="$PROJECT_DIR$/../rails4app/app/assets/stylesheets/application.css" changelist="6dc26a0a-3a5e-4659-a199-c343882becdf" time="1373563235781" ignored="false" />
     <file path="/application.css" changelist="6dc26a0a-3a5e-4659-a199-c343882becdf" time="1373564092346" ignored="false" />
-    <file path="/production.rb" changelist="6dc26a0a-3a5e-4659-a199-c343882becdf" time="1373565163860" ignored="false" />
+    <file path="/production.rb" changelist="6dc26a0a-3a5e-4659-a199-c343882becdf" time="1373565665776" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1068,7 +1069,7 @@
       <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="70" selection-start="1778" selection-end="1778" vertical-scroll-proportion="0.7648579">
+            <state line="48" column="4" selection-start="1911" selection-end="1935" vertical-scroll-proportion="0.8062016">
               <folding />
             </state>
           </provider>
@@ -1192,6 +1193,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="snowforest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="snowforest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2028,7 +2055,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="70" selection-start="1778" selection-end="1778" vertical-scroll-proportion="0.7648579">
+        <state line="48" column="4" selection-start="1911" selection-end="1935" vertical-scroll-proportion="0.8062016">
           <folding />
         </state>
       </provider>
