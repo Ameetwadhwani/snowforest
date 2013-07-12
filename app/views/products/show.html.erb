@@ -1,47 +1,45 @@
-
-<div class="span9"><% if current_user  %>
-    <h1>Reviews</h1>
-        <strong> Reviews for <%= @product.name %> </strong>
-        <div>
-            <% @product.reviews.each do |review| %>
-               <blockquote> <%= review.comment %> </blockquote>
-                 <% if review.user != nil %>
-                     by <%= review.user.email %>
-                     Added on: <%= review.created_at %>
-                 <% end %>
-            <% end %>
-        </div>
-<% end %>
+<%- model_class = Product -%>
+<div class="page-header">
+  <h1><%= @product.name %></h1>
 </div>
 
-<div class="span3">
-  <div id="text area" style= "width: 150px">
-    <% if current_user %>
-        <h4>New Review</h4>
-            <%= form_for([@product, @review]) do |f| %>
-                <% if @review.errors.any? %>
-                    <div id="alert alert-block">
-                        <h2><%= pluralize(@review.errors.count, 'error') %> prohibited this review from being saved:</h2>
-                            <ul>
-                                 <% @review.errors.full_messages.each do |msg| %>
-                                     <li><%= msg %></li>
-                                 <% end %>
-                             </ul>
-                     </div>
-                <% end %>
+<div style="float: left" class=" ">
+   <p></p>
 
-                <div class="field">
-                    <%= f.label :comment %><br />
-                    <%= f.text_area :comment %>
-                </div>
+</div>
 
-                <div class="actions">
-                    <%= f.submit :class => 'btn btn-primary span12' %>
-                </div>
-            <% end %>
+<div style="display: block">
+    <dl class="dl-horizontal" style="display: inline-block">
+      <dt><strong><%= model_class.human_attribute_name(:id)%>:</strong></dt>
+      <dd><%= @product.id %></dd>
+      <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+      <dd><%= @product.name %></dd>
+      <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
+      <dd><%= @product.description %></dd>
+      <dt><strong><%= model_class.human_attribute_name(:price_in_cents) %>:</strong></dt>
+      <dd><%= @product.formatted_price %></dd>
 
-    <% else %>
-            <p>Please <%= link_to "log in", new_session_path %> to add a review.</p>
-    <% end %>
+    </dl>
+</div>
+
+
+<div style="float: left; margin-left: 10px; display: inline-block;">
+    <div class="form-actions">
+      <%= link_to t('.back', :default => t('helpers.links.back')),
+                  products_path, :class => 'btn'  %>
+      <%= link_to t('.back', :default => t('helpers.links.back')),
+                  products_path, :class => 'btn'  %>
+      <%= link_to t('.edit', :default => t('helpers.links.edit')),
+                  edit_product_path(@product), :class => 'btn' %>
+      <%= link_to t('.destroy', :default => t('helpers.links.destroy')),
+                  product_path(@product),
+                  :method => 'delete',
+                  :data => { :confirm => t('.confirm', :default => t('helpers.links.confirm', :default => 'Are you sure?')) },
+                  :class => 'btn btn-danger' %>
+    </div>
+
+
+  <div style="float: left; display: inline-block;">
+    <%= render 'reviews/form' %>
   </div>
 </div>
